@@ -53,7 +53,6 @@ class GameOfLife {
 						this.grid[i][j] = 1;
 					}
 					this.updatePopulation();
-					document.getElementById('population').textContent = this.population;
 				});
 			}
 		}
@@ -186,10 +185,6 @@ class GameOfLife {
 			this.generation++;
 			this.updatePopulation();
 		}
-
-		// Update UI
-		document.getElementById('generation').textContent = this.generation;
-		document.getElementById('population').textContent = this.population;
 	}
 
 	calcNeighbors(x, y) {

@@ -12,19 +12,14 @@ $isAdmin = isAdmin();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conway's Game of Life</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar">
         <div class="container">
             <a class="navbar-brand" href="index.php">Game of Life</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="navbar-nav">
+                <ul class="nav-list">
                     <li class="nav-item">
                         <a class="nav-link active" href="index.php">Game</a>
                     </li>
@@ -55,18 +50,6 @@ $isAdmin = isAdmin();
 
     <!-- Main Content -->
     <div class="container game-container">
-        <!-- Stats Panel -->
-        <div class="stats-panel">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>Generation: <span id="generation">0</span></h5>
-                </div>
-                <div class="col-md-6">
-                    <h5>Population: <span id="population">0</span></h5>
-                </div>
-            </div>
-        </div>
-
         <!-- Game Grid -->
         <div id="game-container"></div>
 
@@ -74,7 +57,7 @@ $isAdmin = isAdmin();
         <div class="control-panel">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="mb-3">
+                    <div class="form-group">
                         <label for="preset" class="form-label">Load Pattern</label>
                         <select id="preset" class="form-select">
                             <option value="0">Select a preset</option>
