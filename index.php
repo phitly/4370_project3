@@ -67,7 +67,7 @@ $isAdmin = isAdmin();
                             <option value="blinker">Blinker</option>
                             <option value="beacon">Beacon</option>
                             <option value="glider">Glider</option>
-                            <option value="gosper">Gosper Glider Gun</option>
+                            
                         </select>
                     </div>
                 </div>
